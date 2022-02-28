@@ -609,6 +609,7 @@
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Decimal Time/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "10 Clock";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
@@ -621,7 +622,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.Decimal-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.10-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -639,6 +640,7 @@
 				DEVELOPMENT_TEAM = SMNXVGXK4L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Decimal Time/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "10 Clock";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
@@ -651,7 +653,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.Decimal-Time";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.10-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
