@@ -7,17 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0236FFEF27CD633100FE17B7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236FFEE27CD633100FE17B7 /* Colors.xcassets */; };
 		026ECF3227CA443200797D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF3127CA443200797D58 /* AppDelegate.swift */; };
 		026ECF3B27CA443300797D58 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF3A27CA443300797D58 /* Icons.xcassets */; };
 		026ECF4927CA451400797D58 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4827CA451400797D58 /* ModuleTransitionable.swift */; };
+		026ECF4D27CA53F300797D58 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */; };
+		026ECF4F27CA541000797D58 /* MenuTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4E27CA541000797D58 /* MenuTabs.swift */; };
+		026ECF6627CA5C2300797D58 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */; };
+		026ECF6727CA5C2300797D58 /* WorldClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */; };
+		026ECF6B27CA5C6300797D58 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6927CA5C6300797D58 /* AlarmViewController.swift */; };
+		026ECF6C27CA5C6300797D58 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */; };
+		026ECF6F27CA5C6F00797D58 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */; };
+		026ECF7027CA5C6F00797D58 /* StopwatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */; };
+		026ECF7327CA5C7800797D58 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7127CA5C7800797D58 /* TimerViewController.swift */; };
+		026ECF7427CA5C7800797D58 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF7227CA5C7800797D58 /* TimerViewController.xib */; };
+		026ECF7627CA5DDD00797D58 /* WorldClockRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */; };
+		026ECF7827CA5E0000797D58 /* WorldClockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */; };
+		026ECF7A27CA5E8300797D58 /* AlarmRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */; };
+		026ECF7C27CA5E9100797D58 /* AlarmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */; };
+		026ECF7E27CA5EC600797D58 /* StopwatchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */; };
+		026ECF8027CA5ED700797D58 /* StopwatchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */; };
+		026ECF8227CA5EFD00797D58 /* TimerRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */; };
+		026ECF8427CA5F0A00797D58 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8327CA5F0A00797D58 /* TimerRouter.swift */; };
+		026ECF8627CA608900797D58 /* WolrdClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */; };
+		026ECF8827CA60D800797D58 /* WorldClockViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */; };
+		026ECF8A27CA618100797D58 /* AlarmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8927CA618100797D58 /* AlarmPresenter.swift */; };
+		026ECF8C27CA61BB00797D58 /* StopwatchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */; };
+		026ECF8E27CA621100797D58 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8D27CA621100797D58 /* TimerPresenter.swift */; };
+		026ECF9027CA623D00797D58 /* TimerViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8F27CA623D00797D58 /* TimerViewInput.swift */; };
+		026ECF9227CA625400797D58 /* StopwatchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9127CA625400797D58 /* StopwatchViewInput.swift */; };
+		026ECF9427CA627000797D58 /* AlarmViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9327CA627000797D58 /* AlarmViewInput.swift */; };
+		026ECF9627CA62D600797D58 /* WorldClockModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */; };
+		026ECF9827CA641A00797D58 /* WorldClockViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */; };
+		026ECF9A27CA64A400797D58 /* AlarmViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */; };
+		026ECF9C27CA64C200797D58 /* StopwatchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */; };
+		026ECF9E27CA64DA00797D58 /* TimerViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */; };
+		026ECFA027CA650D00797D58 /* AlarmModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */; };
+		026ECFA227CA654300797D58 /* StopwatchModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */; };
+		026ECFA427CA658300797D58 /* TimerModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0236FFEE27CD633100FE17B7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		026ECF2E27CA443200797D58 /* Decimal Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Decimal Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026ECF3127CA443200797D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026ECF3A27CA443300797D58 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		026ECF3F27CA443300797D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026ECF4827CA451400797D58 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		026ECF4E27CA541000797D58 /* MenuTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabs.swift; sourceTree = "<group>"; };
+		026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldClockViewController.xib; sourceTree = "<group>"; };
+		026ECF6927CA5C6300797D58 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
+		026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopwatchViewController.xib; sourceTree = "<group>"; };
+		026ECF7127CA5C7800797D58 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		026ECF7227CA5C7800797D58 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockRouter.swift; sourceTree = "<group>"; };
+		026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRouter.swift; sourceTree = "<group>"; };
+		026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchRouter.swift; sourceTree = "<group>"; };
+		026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouterInput.swift; sourceTree = "<group>"; };
+		026ECF8327CA5F0A00797D58 /* TimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
+		026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolrdClockPresenter.swift; sourceTree = "<group>"; };
+		026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewInput.swift; sourceTree = "<group>"; };
+		026ECF8927CA618100797D58 /* AlarmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPresenter.swift; sourceTree = "<group>"; };
+		026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchPresenter.swift; sourceTree = "<group>"; };
+		026ECF8D27CA621100797D58 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
+		026ECF8F27CA623D00797D58 /* TimerViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewInput.swift; sourceTree = "<group>"; };
+		026ECF9127CA625400797D58 /* StopwatchViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewInput.swift; sourceTree = "<group>"; };
+		026ECF9327CA627000797D58 /* AlarmViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewInput.swift; sourceTree = "<group>"; };
+		026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0236FFED27CD631400FE17B7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				0236FFEE27CD633100FE17B7 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		026ECF2527CA443200797D58 = {
 			isa = PBXGroup;
 			children = (
@@ -50,10 +128,10 @@
 		026ECF3027CA443200797D58 /* Decimal Time */ = {
 			isa = PBXGroup;
 			children = (
+				026ECF3F27CA443300797D58 /* Info.plist */,
 				026ECF4527CA44B400797D58 /* Application */,
 				026ECF4627CA44BC00797D58 /* Flows */,
 				026ECF4727CA44C500797D58 /* Resources */,
-				026ECF3F27CA443300797D58 /* Info.plist */,
 			);
 			path = "Decimal Time";
 			sourceTree = "<group>";
@@ -70,6 +148,11 @@
 		026ECF4627CA44BC00797D58 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				026ECF4B27CA539900797D58 /* TabBar */,
+				026ECF5027CA5A8500797D58 /* WorldClock */,
+				026ECF5227CA5A9200797D58 /* Alarm */,
+				026ECF5327CA5A9600797D58 /* Stopwatch */,
+				026ECF5127CA5A8E00797D58 /* Timer */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -77,6 +160,7 @@
 		026ECF4727CA44C500797D58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0236FFED27CD631400FE17B7 /* Colors */,
 				026ECF4A27CA454900797D58 /* Icons */,
 			);
 			path = Resources;
@@ -88,6 +172,203 @@
 				026ECF3A27CA443300797D58 /* Icons.xcassets */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		026ECF4B27CA539900797D58 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */,
+				026ECF4E27CA541000797D58 /* MenuTabs.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		026ECF5027CA5A8500797D58 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5727CA5B3800797D58 /* Configurator */,
+				026ECF5627CA5B3300797D58 /* Presenter */,
+				026ECF5527CA5B3000797D58 /* Router */,
+				026ECF5427CA5B2900797D58 /* View */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		026ECF5127CA5A8E00797D58 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6327CA5B9000797D58 /* Configurator */,
+				026ECF6227CA5B8A00797D58 /* Presenter */,
+				026ECF6127CA5B8700797D58 /* Router */,
+				026ECF6027CA5B8400797D58 /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		026ECF5227CA5A9200797D58 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5B27CA5B6B00797D58 /* Configurator */,
+				026ECF5A27CA5B6700797D58 /* Presenter */,
+				026ECF5927CA5B6500797D58 /* Router */,
+				026ECF5827CA5B6100797D58 /* View */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		026ECF5327CA5A9600797D58 /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5F27CA5B7D00797D58 /* Configurator */,
+				026ECF5E27CA5B7A00797D58 /* Presenter */,
+				026ECF5D27CA5B7600797D58 /* Router */,
+				026ECF5C27CA5B7200797D58 /* View */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+		026ECF5427CA5B2900797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */,
+				026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */,
+				026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */,
+				026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5527CA5B3000797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */,
+				026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5627CA5B3300797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5727CA5B3800797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF5827CA5B6100797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6927CA5C6300797D58 /* AlarmViewController.swift */,
+				026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */,
+				026ECF9327CA627000797D58 /* AlarmViewInput.swift */,
+				026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5927CA5B6500797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */,
+				026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5A27CA5B6700797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8927CA618100797D58 /* AlarmPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5B27CA5B6B00797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF5C27CA5B7200797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */,
+				026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */,
+				026ECF9127CA625400797D58 /* StopwatchViewInput.swift */,
+				026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5D27CA5B7600797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */,
+				026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5E27CA5B7A00797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5F27CA5B7D00797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF6027CA5B8400797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7127CA5C7800797D58 /* TimerViewController.swift */,
+				026ECF7227CA5C7800797D58 /* TimerViewController.xib */,
+				026ECF8F27CA623D00797D58 /* TimerViewInput.swift */,
+				026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF6127CA5B8700797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */,
+				026ECF8327CA5F0A00797D58 /* TimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF6227CA5B8A00797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8D27CA621100797D58 /* TimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF6327CA5B9000797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +429,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026ECF7027CA5C6F00797D58 /* StopwatchViewController.xib in Resources */,
+				026ECF6C27CA5C6300797D58 /* AlarmViewController.xib in Resources */,
+				026ECF6727CA5C2300797D58 /* WorldClockViewController.xib in Resources */,
+				0236FFEF27CD633100FE17B7 /* Colors.xcassets in Resources */,
+				026ECF7427CA5C7800797D58 /* TimerViewController.xib in Resources */,
 				026ECF3B27CA443300797D58 /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,7 +445,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026ECF8C27CA61BB00797D58 /* StopwatchPresenter.swift in Sources */,
+				026ECFA227CA654300797D58 /* StopwatchModuleConfigurator.swift in Sources */,
+				026ECF6627CA5C2300797D58 /* WorldClockViewController.swift in Sources */,
+				026ECF8227CA5EFD00797D58 /* TimerRouterInput.swift in Sources */,
+				026ECF7A27CA5E8300797D58 /* AlarmRouterInput.swift in Sources */,
+				026ECF4F27CA541000797D58 /* MenuTabs.swift in Sources */,
+				026ECF6B27CA5C6300797D58 /* AlarmViewController.swift in Sources */,
+				026ECF7627CA5DDD00797D58 /* WorldClockRouterInput.swift in Sources */,
+				026ECF9427CA627000797D58 /* AlarmViewInput.swift in Sources */,
+				026ECF9027CA623D00797D58 /* TimerViewInput.swift in Sources */,
+				026ECF9C27CA64C200797D58 /* StopwatchViewOutput.swift in Sources */,
+				026ECF7827CA5E0000797D58 /* WorldClockRouter.swift in Sources */,
+				026ECF8627CA608900797D58 /* WolrdClockPresenter.swift in Sources */,
+				026ECF9E27CA64DA00797D58 /* TimerViewOutput.swift in Sources */,
+				026ECF7C27CA5E9100797D58 /* AlarmRouter.swift in Sources */,
+				026ECF4D27CA53F300797D58 /* MainTabBarViewController.swift in Sources */,
+				026ECF8A27CA618100797D58 /* AlarmPresenter.swift in Sources */,
+				026ECF9627CA62D600797D58 /* WorldClockModuleConfigurator.swift in Sources */,
+				026ECFA427CA658300797D58 /* TimerModuleConfigurator.swift in Sources */,
+				026ECF7E27CA5EC600797D58 /* StopwatchRouterInput.swift in Sources */,
+				026ECF8827CA60D800797D58 /* WorldClockViewInput.swift in Sources */,
+				026ECF9827CA641A00797D58 /* WorldClockViewOutput.swift in Sources */,
+				026ECF7327CA5C7800797D58 /* TimerViewController.swift in Sources */,
 				026ECF3227CA443200797D58 /* AppDelegate.swift in Sources */,
+				026ECF6F27CA5C6F00797D58 /* StopwatchViewController.swift in Sources */,
+				026ECF9227CA625400797D58 /* StopwatchViewInput.swift in Sources */,
+				026ECF8E27CA621100797D58 /* TimerPresenter.swift in Sources */,
+				026ECF8027CA5ED700797D58 /* StopwatchRouter.swift in Sources */,
+				026ECFA027CA650D00797D58 /* AlarmModuleConfigurator.swift in Sources */,
+				026ECF8427CA5F0A00797D58 /* TimerRouter.swift in Sources */,
+				026ECF9A27CA64A400797D58 /* AlarmViewOutput.swift in Sources */,
 				026ECF4927CA451400797D58 /* ModuleTransitionable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +610,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Decimal Time/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,6 +640,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Decimal Time/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
