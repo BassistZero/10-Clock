@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0236FFEF27CD633100FE17B7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236FFEE27CD633100FE17B7 /* Colors.xcassets */; };
+		026ECF3227CA443200797D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF3127CA443200797D58 /* AppDelegate.swift */; };
+		026ECF3B27CA443300797D58 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF3A27CA443300797D58 /* Icons.xcassets */; };
+		026ECF4927CA451400797D58 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4827CA451400797D58 /* ModuleTransitionable.swift */; };
+		026ECF4D27CA53F300797D58 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */; };
+		026ECF4F27CA541000797D58 /* MenuTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF4E27CA541000797D58 /* MenuTabs.swift */; };
+		026ECF6627CA5C2300797D58 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */; };
+		026ECF6727CA5C2300797D58 /* WorldClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */; };
+		026ECF6B27CA5C6300797D58 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6927CA5C6300797D58 /* AlarmViewController.swift */; };
+		026ECF6C27CA5C6300797D58 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */; };
+		026ECF6F27CA5C6F00797D58 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */; };
+		026ECF7027CA5C6F00797D58 /* StopwatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */; };
+		026ECF7327CA5C7800797D58 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7127CA5C7800797D58 /* TimerViewController.swift */; };
+		026ECF7427CA5C7800797D58 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026ECF7227CA5C7800797D58 /* TimerViewController.xib */; };
+		026ECF7627CA5DDD00797D58 /* WorldClockRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */; };
+		026ECF7827CA5E0000797D58 /* WorldClockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */; };
+		026ECF7A27CA5E8300797D58 /* AlarmRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */; };
+		026ECF7C27CA5E9100797D58 /* AlarmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */; };
+		026ECF7E27CA5EC600797D58 /* StopwatchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */; };
+		026ECF8027CA5ED700797D58 /* StopwatchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */; };
+		026ECF8227CA5EFD00797D58 /* TimerRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */; };
+		026ECF8427CA5F0A00797D58 /* TimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8327CA5F0A00797D58 /* TimerRouter.swift */; };
+		026ECF8627CA608900797D58 /* WolrdClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */; };
+		026ECF8827CA60D800797D58 /* WorldClockViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */; };
+		026ECF8A27CA618100797D58 /* AlarmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8927CA618100797D58 /* AlarmPresenter.swift */; };
+		026ECF8C27CA61BB00797D58 /* StopwatchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */; };
+		026ECF8E27CA621100797D58 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8D27CA621100797D58 /* TimerPresenter.swift */; };
+		026ECF9027CA623D00797D58 /* TimerViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF8F27CA623D00797D58 /* TimerViewInput.swift */; };
+		026ECF9227CA625400797D58 /* StopwatchViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9127CA625400797D58 /* StopwatchViewInput.swift */; };
+		026ECF9427CA627000797D58 /* AlarmViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9327CA627000797D58 /* AlarmViewInput.swift */; };
+		026ECF9627CA62D600797D58 /* WorldClockModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */; };
+		026ECF9827CA641A00797D58 /* WorldClockViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */; };
+		026ECF9A27CA64A400797D58 /* AlarmViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */; };
+		026ECF9C27CA64C200797D58 /* StopwatchViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */; };
+		026ECF9E27CA64DA00797D58 /* TimerViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */; };
+		026ECFA027CA650D00797D58 /* AlarmModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */; };
+		026ECFA227CA654300797D58 /* StopwatchModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */; };
+		026ECFA427CA658300797D58 /* TimerModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */; };
+		029768B927E0F00A00A661B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 029768BB27E0F00A00A661B3 /* Localizable.strings */; };
+		029768BE27E0F17C00A661B3 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029768BD27E0F17C00A661B3 /* Localizable.swift */; };
+		029768C227E0F1F600A661B3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029768C127E0F1F600A661B3 /* Colors.swift */; };
+		029768C427E0F1FC00A661B3 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029768C327E0F1FC00A661B3 /* Icons.swift */; };
+		66E04289416C74890B041DCE /* libPods-10 Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6237E038CD8B5864786981C8 /* libPods-10 Time.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0236FFEE27CD633100FE17B7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		026ECF2E27CA443200797D58 /* 10 Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10 Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		026ECF3127CA443200797D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		026ECF3A27CA443300797D58 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		026ECF3F27CA443300797D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026ECF4827CA451400797D58 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		026ECF4E27CA541000797D58 /* MenuTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabs.swift; sourceTree = "<group>"; };
+		026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorldClockViewController.xib; sourceTree = "<group>"; };
+		026ECF6927CA5C6300797D58 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
+		026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StopwatchViewController.xib; sourceTree = "<group>"; };
+		026ECF7127CA5C7800797D58 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		026ECF7227CA5C7800797D58 /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockRouter.swift; sourceTree = "<group>"; };
+		026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRouter.swift; sourceTree = "<group>"; };
+		026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchRouterInput.swift; sourceTree = "<group>"; };
+		026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchRouter.swift; sourceTree = "<group>"; };
+		026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouterInput.swift; sourceTree = "<group>"; };
+		026ECF8327CA5F0A00797D58 /* TimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRouter.swift; sourceTree = "<group>"; };
+		026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolrdClockPresenter.swift; sourceTree = "<group>"; };
+		026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewInput.swift; sourceTree = "<group>"; };
+		026ECF8927CA618100797D58 /* AlarmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPresenter.swift; sourceTree = "<group>"; };
+		026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchPresenter.swift; sourceTree = "<group>"; };
+		026ECF8D27CA621100797D58 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
+		026ECF8F27CA623D00797D58 /* TimerViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewInput.swift; sourceTree = "<group>"; };
+		026ECF9127CA625400797D58 /* StopwatchViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewInput.swift; sourceTree = "<group>"; };
+		026ECF9327CA627000797D58 /* AlarmViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewInput.swift; sourceTree = "<group>"; };
+		026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewOutput.swift; sourceTree = "<group>"; };
+		026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchModuleConfigurator.swift; sourceTree = "<group>"; };
+		026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModuleConfigurator.swift; sourceTree = "<group>"; };
+		029768BA27E0F00A00A661B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		029768BC27E0F00B00A661B3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		029768BD27E0F17C00A661B3 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		029768C127E0F1F600A661B3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		029768C327E0F1FC00A661B3 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		6237E038CD8B5864786981C8 /* libPods-10 Time.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-10 Time.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		701A9823DA3443EC33021B98 /* Pods-10 Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-10 Time.debug.xcconfig"; path = "Target Support Files/Pods-10 Time/Pods-10 Time.debug.xcconfig"; sourceTree = "<group>"; };
+		A5906B486DFAF564B0F15932 /* Pods-10 Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-10 Time.release.xcconfig"; path = "Target Support Files/Pods-10 Time/Pods-10 Time.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026ECF2B27CA443200797D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E04289416C74890B041DCE /* libPods-10 Time.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0236FFED27CD631400FE17B7 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				029768C127E0F1F600A661B3 /* Colors.swift */,
+				0236FFEE27CD633100FE17B7 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		026ECF2527CA443200797D58 = {
+			isa = PBXGroup;
+			children = (
+				026ECF3027CA443200797D58 /* 10 Time */,
+				026ECF2F27CA443200797D58 /* Products */,
+				601B96C0C6E1F5FC4C7B44A7 /* Pods */,
+				24DFD51A33FC7D3FF867E06E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		026ECF2F27CA443200797D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF2E27CA443200797D58 /* 10 Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		026ECF3027CA443200797D58 /* 10 Time */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF3F27CA443300797D58 /* Info.plist */,
+				026ECF4527CA44B400797D58 /* Application */,
+				026ECF4627CA44BC00797D58 /* Flows */,
+				026ECF4727CA44C500797D58 /* Resources */,
+			);
+			path = "10 Time";
+			sourceTree = "<group>";
+		};
+		026ECF4527CA44B400797D58 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF3127CA443200797D58 /* AppDelegate.swift */,
+				026ECF4827CA451400797D58 /* ModuleTransitionable.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		026ECF4627CA44BC00797D58 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF4B27CA539900797D58 /* TabBar */,
+				026ECF5027CA5A8500797D58 /* WorldClock */,
+				026ECF5227CA5A9200797D58 /* Alarm */,
+				026ECF5327CA5A9600797D58 /* Stopwatch */,
+				026ECF5127CA5A8E00797D58 /* Timer */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		026ECF4727CA44C500797D58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				029768B627E0EFEB00A661B3 /* Localizable */,
+				0236FFED27CD631400FE17B7 /* Colors */,
+				026ECF4A27CA454900797D58 /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		026ECF4A27CA454900797D58 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				029768C327E0F1FC00A661B3 /* Icons.swift */,
+				026ECF3A27CA443300797D58 /* Icons.xcassets */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		026ECF4B27CA539900797D58 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF4C27CA53F300797D58 /* MainTabBarViewController.swift */,
+				026ECF4E27CA541000797D58 /* MenuTabs.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		026ECF5027CA5A8500797D58 /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5727CA5B3800797D58 /* Configurator */,
+				026ECF5627CA5B3300797D58 /* Presenter */,
+				026ECF5527CA5B3000797D58 /* Router */,
+				026ECF5427CA5B2900797D58 /* View */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		026ECF5127CA5A8E00797D58 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6327CA5B9000797D58 /* Configurator */,
+				026ECF6227CA5B8A00797D58 /* Presenter */,
+				026ECF6127CA5B8700797D58 /* Router */,
+				026ECF6027CA5B8400797D58 /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		026ECF5227CA5A9200797D58 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5B27CA5B6B00797D58 /* Configurator */,
+				026ECF5A27CA5B6700797D58 /* Presenter */,
+				026ECF5927CA5B6500797D58 /* Router */,
+				026ECF5827CA5B6100797D58 /* View */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		026ECF5327CA5A9600797D58 /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF5F27CA5B7D00797D58 /* Configurator */,
+				026ECF5E27CA5B7A00797D58 /* Presenter */,
+				026ECF5D27CA5B7600797D58 /* Router */,
+				026ECF5C27CA5B7200797D58 /* View */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+		026ECF5427CA5B2900797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6427CA5C2300797D58 /* WorldClockViewController.swift */,
+				026ECF6527CA5C2300797D58 /* WorldClockViewController.xib */,
+				026ECF8727CA60D800797D58 /* WorldClockViewInput.swift */,
+				026ECF9727CA641A00797D58 /* WorldClockViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5527CA5B3000797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7727CA5E0000797D58 /* WorldClockRouter.swift */,
+				026ECF7527CA5DDD00797D58 /* WorldClockRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5627CA5B3300797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8527CA608900797D58 /* WolrdClockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5727CA5B3800797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF9527CA62D600797D58 /* WorldClockModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF5827CA5B6100797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6927CA5C6300797D58 /* AlarmViewController.swift */,
+				026ECF6A27CA5C6300797D58 /* AlarmViewController.xib */,
+				026ECF9327CA627000797D58 /* AlarmViewInput.swift */,
+				026ECF9927CA64A400797D58 /* AlarmViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5927CA5B6500797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7927CA5E8300797D58 /* AlarmRouterInput.swift */,
+				026ECF7B27CA5E9100797D58 /* AlarmRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5A27CA5B6700797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8927CA618100797D58 /* AlarmPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5B27CA5B6B00797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF9F27CA650D00797D58 /* AlarmModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF5C27CA5B7200797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF6D27CA5C6F00797D58 /* StopwatchViewController.swift */,
+				026ECF6E27CA5C6F00797D58 /* StopwatchViewController.xib */,
+				026ECF9127CA625400797D58 /* StopwatchViewInput.swift */,
+				026ECF9B27CA64C200797D58 /* StopwatchViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF5D27CA5B7600797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7D27CA5EC600797D58 /* StopwatchRouterInput.swift */,
+				026ECF7F27CA5ED700797D58 /* StopwatchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF5E27CA5B7A00797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8B27CA61BB00797D58 /* StopwatchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF5F27CA5B7D00797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECFA127CA654300797D58 /* StopwatchModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		026ECF6027CA5B8400797D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF7127CA5C7800797D58 /* TimerViewController.swift */,
+				026ECF7227CA5C7800797D58 /* TimerViewController.xib */,
+				026ECF8F27CA623D00797D58 /* TimerViewInput.swift */,
+				026ECF9D27CA64DA00797D58 /* TimerViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026ECF6127CA5B8700797D58 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8127CA5EFD00797D58 /* TimerRouterInput.swift */,
+				026ECF8327CA5F0A00797D58 /* TimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		026ECF6227CA5B8A00797D58 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				026ECF8D27CA621100797D58 /* TimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		026ECF6327CA5B9000797D58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				026ECFA327CA658300797D58 /* TimerModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		029768B627E0EFEB00A661B3 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				029768BD27E0F17C00A661B3 /* Localizable.swift */,
+				029768BB27E0F00A00A661B3 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		24DFD51A33FC7D3FF867E06E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6237E038CD8B5864786981C8 /* libPods-10 Time.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		601B96C0C6E1F5FC4C7B44A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				701A9823DA3443EC33021B98 /* Pods-10 Time.debug.xcconfig */,
+				A5906B486DFAF564B0F15932 /* Pods-10 Time.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		026ECF2D27CA443200797D58 /* 10 Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026ECF4227CA443300797D58 /* Build configuration list for PBXNativeTarget "10 Time" */;
+			buildPhases = (
+				0A837F2C00FED56A8B10BF28 /* [CP] Check Pods Manifest.lock */,
+				022ABCDC27E0A69000771BA6 /* Run SwiftLint */,
+				029768AC27E0D8E000A661B3 /* Run SwiftGen */,
+				026ECF2A27CA443200797D58 /* Sources */,
+				026ECF2B27CA443200797D58 /* Frameworks */,
+				026ECF2C27CA443200797D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10 Time";
+			productName = "Decimal Time";
+			productReference = 026ECF2E27CA443200797D58 /* 10 Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		026ECF2627CA443200797D58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					026ECF2D27CA443200797D58 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 026ECF2927CA443200797D58 /* Build configuration list for PBXProject "10 Time" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+				Base,
+			);
+			mainGroup = 026ECF2527CA443200797D58;
+			productRefGroup = 026ECF2F27CA443200797D58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				026ECF2D27CA443200797D58 /* 10 Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		026ECF2C27CA443200797D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026ECF7027CA5C6F00797D58 /* StopwatchViewController.xib in Resources */,
+				026ECF6C27CA5C6300797D58 /* AlarmViewController.xib in Resources */,
+				026ECF6727CA5C2300797D58 /* WorldClockViewController.xib in Resources */,
+				029768B927E0F00A00A661B3 /* Localizable.strings in Resources */,
+				0236FFEF27CD633100FE17B7 /* Colors.xcassets in Resources */,
+				026ECF7427CA5C7800797D58 /* TimerViewController.xib in Resources */,
+				026ECF3B27CA443300797D58 /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022ABCDC27E0A69000771BA6 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		029768AC27E0D8E000A661B3 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n\n";
+		};
+		0A837F2C00FED56A8B10BF28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-10 Time-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026ECF2A27CA443200797D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026ECF8C27CA61BB00797D58 /* StopwatchPresenter.swift in Sources */,
+				026ECFA227CA654300797D58 /* StopwatchModuleConfigurator.swift in Sources */,
+				026ECF6627CA5C2300797D58 /* WorldClockViewController.swift in Sources */,
+				029768C227E0F1F600A661B3 /* Colors.swift in Sources */,
+				026ECF8227CA5EFD00797D58 /* TimerRouterInput.swift in Sources */,
+				026ECF7A27CA5E8300797D58 /* AlarmRouterInput.swift in Sources */,
+				026ECF4F27CA541000797D58 /* MenuTabs.swift in Sources */,
+				026ECF6B27CA5C6300797D58 /* AlarmViewController.swift in Sources */,
+				026ECF7627CA5DDD00797D58 /* WorldClockRouterInput.swift in Sources */,
+				026ECF9427CA627000797D58 /* AlarmViewInput.swift in Sources */,
+				026ECF9027CA623D00797D58 /* TimerViewInput.swift in Sources */,
+				026ECF9C27CA64C200797D58 /* StopwatchViewOutput.swift in Sources */,
+				026ECF7827CA5E0000797D58 /* WorldClockRouter.swift in Sources */,
+				026ECF8627CA608900797D58 /* WolrdClockPresenter.swift in Sources */,
+				026ECF9E27CA64DA00797D58 /* TimerViewOutput.swift in Sources */,
+				026ECF7C27CA5E9100797D58 /* AlarmRouter.swift in Sources */,
+				026ECF4D27CA53F300797D58 /* MainTabBarViewController.swift in Sources */,
+				026ECF8A27CA618100797D58 /* AlarmPresenter.swift in Sources */,
+				026ECF9627CA62D600797D58 /* WorldClockModuleConfigurator.swift in Sources */,
+				026ECFA427CA658300797D58 /* TimerModuleConfigurator.swift in Sources */,
+				026ECF7E27CA5EC600797D58 /* StopwatchRouterInput.swift in Sources */,
+				026ECF8827CA60D800797D58 /* WorldClockViewInput.swift in Sources */,
+				026ECF9827CA641A00797D58 /* WorldClockViewOutput.swift in Sources */,
+				029768BE27E0F17C00A661B3 /* Localizable.swift in Sources */,
+				026ECF7327CA5C7800797D58 /* TimerViewController.swift in Sources */,
+				026ECF3227CA443200797D58 /* AppDelegate.swift in Sources */,
+				026ECF6F27CA5C6F00797D58 /* StopwatchViewController.swift in Sources */,
+				026ECF9227CA625400797D58 /* StopwatchViewInput.swift in Sources */,
+				029768C427E0F1FC00A661B3 /* Icons.swift in Sources */,
+				026ECF8E27CA621100797D58 /* TimerPresenter.swift in Sources */,
+				026ECF8027CA5ED700797D58 /* StopwatchRouter.swift in Sources */,
+				026ECFA027CA650D00797D58 /* AlarmModuleConfigurator.swift in Sources */,
+				026ECF8427CA5F0A00797D58 /* TimerRouter.swift in Sources */,
+				026ECF9A27CA64A400797D58 /* AlarmViewOutput.swift in Sources */,
+				026ECF4927CA451400797D58 /* ModuleTransitionable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		029768BB27E0F00A00A661B3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				029768BA27E0F00A00A661B3 /* en */,
+				029768BC27E0F00B00A661B3 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		026ECF4027CA443300797D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		026ECF4127CA443300797D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		026ECF4327CA443300797D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701A9823DA3443EC33021B98 /* Pods-10 Time.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMNXVGXK4L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "10 Time/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "10 Clock";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.10-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		026ECF4427CA443300797D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5906B486DFAF564B0F15932 /* Pods-10 Time.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SMNXVGXK4L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "10 Time/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "10 Clock";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bassist-Zero.10-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		026ECF2927CA443200797D58 /* Build configuration list for PBXProject "10 Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026ECF4027CA443300797D58 /* Debug */,
+				026ECF4127CA443300797D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026ECF4227CA443300797D58 /* Build configuration list for PBXNativeTarget "10 Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026ECF4327CA443300797D58 /* Debug */,
+				026ECF4427CA443300797D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 026ECF2627CA443200797D58 /* Project object */;
+}

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  10 Time
+
+  Created by Bassist_Zero on 3/15/22.
+  
+*/
+
+// MARK: - TabBarItem
+
+TabBar.worldClock = "Мировые Часы";
+TabBar.alarm = "Будильник";
+TabBar.stopwatch = "Секундомер";
+TabBar.timer = "Таймер";
