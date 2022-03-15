@@ -1,0 +1,27 @@
+input_dir: 10 Time/Resources/
+output_dir: 10 Time/Resources/
+
+# Localization
+strings:
+    inputs: Localizable/en.lproj/Localizable.strings
+    filter: .+\.strings$
+    outputs:
+        templateName: structured-swift5
+        output: Localizable/Localizable.swift
+
+
+xcassets:
+    # Icons
+  - inputs: Icons/Icons.xcassets
+    outputs:
+      - templateName: swift5
+        output: Icons/Icons.swift
+        params:
+            enumName: Icons
+    # Colors
+  - inputs: Colors/Colors.xcassets
+    outputs:
+      - templateName: swift5
+        output: Colors/Colors.swift
+        params:
+            enumName: Colors
